@@ -2,12 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Mensajes de amor</title>
+    <link rel="shortcut icon" type="image/png" href="https://66.media.tumblr.com/tumblr_lkqycraarE1qi6qow.png"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
-      <h1>Hola mundo!</h1>
+      <h1>Mensajes de amor</h1>
+      <h2>¿Cómo cifraremos tus mensajes?</h2>
+      <h3>¡Vamos a utilizar el "cifrado césar"! 
+        <br> 
+        Es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
+
+        Por ejemplo, si usamos un desplazamiento (offset) de 3 posiciones:
+        
+        La letra A se cifra como D.
+        La palabra CASA se cifra como FDVD.</h3>
+
+      <form action="welcome.html">
+        <h4>¡Ingresa tus datos para comenzar!</h4>
+        <h4>Ingresa tu nombre:</h4>
+        <input type="text" placeholder="Tu nombre aquí">
+        <h4>¿Con qué género te identificas?</h4>
+        <input type="radio" name="gender" id="male"> Masculino
+        <input type="radio" name="gender" id="female"> Femenino
+        <input type="radio" name="gender" id="nonBinary"> No me identifico con ninguno
+        <br>
+        <br>
+        <br>
+        <button onclick="saveUser()">Entrar</button>
+      </form>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
