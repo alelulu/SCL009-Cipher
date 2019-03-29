@@ -19,18 +19,18 @@
         La letra A se cifra como D.
         La palabra CASA se cifra como FDVD.</h3>
 
-      <form action="welcome.html">
+      <form action="welcome.html" id="userForm">
         <h4>¡Ingresa tus datos para comenzar!</h4>
-        <h4>Ingresa tu nombre:</h4>
-        <input type="text" placeholder="Tu nombre aquí">
-        <h4>¿Con qué género te identificas?</h4>
+        <h5>Ingresa tu nombre:</h5>
+        <input type="text" id="user" placeholder="Tu nombre aquí">
+        <h5>¿Con qué género te identificas?</h5>
         <input type="radio" name="gender" id="male"> Masculino
         <input type="radio" name="gender" id="female"> Femenino
         <input type="radio" name="gender" id="nonBinary"> No me identifico con ninguno
         <br>
         <br>
         <br>
-        <button onclick="saveUser()">Entrar</button>
+        <button type="button" onclick="saveUser()">Entrar</button>
       </form>
     </div>
     <script src="cipher.js"></script>

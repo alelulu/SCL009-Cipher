@@ -6,7 +6,7 @@
     <link rel="shortcut icon" type="image/png" href="https://66.media.tumblr.com/tumblr_lkqycraarE1qi6qow.png"/>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="decoding()">
     <div id="root">
       <h1>Mensajes de amor</h1>
       <h2>Decodificando</h2>
@@ -14,13 +14,13 @@
         <br> 
         Luego de decifrar tu mensaje estará oculto. Para verlo cuando quieras presiona el ícono del ojo.</h3>
       <form action="">
-        <input type="text" placeholder="Aquí va tu mensaje">
-        <input type="radio" name="offSet" id="key"> Usar clave por defecto (3)
-        <input type="radio" name="offSet" id="key"> Elegir tu propia clave
-        <input type="text"  id="chooseOffSet">
+        <input type="text" id="encondeText"placeholder="Aquí va tu mensaje">
+        <input type="radio" name="offSet" id="defaultOffSet"> Usar clave por defecto (3)
+        <input type="radio" name="offSet" id="userOffSet"> Elegir tu propia clave
+        <input type="number" min="1" name="chooseOffSet" id="customeOffSet">
         <br>
         <br> 
-        <button onclick="decode()">Decodificar</button>
+        <button id="decodeBtn">Decodificar</button>
       </form>
       <form action="">
           <input type="text" name="" id="" placeholder="Aquí aparecerá tu mensaje decodificado">
