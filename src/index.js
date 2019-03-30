@@ -1,17 +1,32 @@
 function saveUser(){
-    let user = document.getElementById("user").value;
+    let user1 = document.getElementById("user1").value;
+    let user2 = document.getElementById("user2").value;
     let userForm = document.getElementById("userForm");
-    if(user!=""){
-      localStorage.setItem("name", user);
+    if(user1 && user2 != ""){
+      localStorage.setItem("name1", user1);
+      localStorage.setItem("name2", user2);
       userForm.submit();
   }
 }
 function setName(){
     let sayHi = document.getElementById("sayHi");
-    sayHi.innerHTML = "Hola, "+localStorage.getItem("name");
+    sayHi.innerHTML = "Hola, "+localStorage.getItem("name1");
+
 }
 
 function encoding(){
+    let codingFor = document.getElementById("codingFor");
+    codingFor.innerHTML = "Codificando mensaje para "+localStorage.getItem("name2")
+    let eyeBtn = document.getElementById("eyeBtn")
+    eyeBtn.addEventListener("click", function(){
+        let eyeIcon = document.getElementById("eyeIcon")
+        if (eyeIcon.getAttribute("src") == "eye-closed.svg"){
+            eyeIcon.setAttribute("src", "eye.svg")
+        } 
+        else{
+            eyeIcon.setAttribute("src", "eye-closed.svg")
+        }
+    })
 let defaultOffSet = document.getElementById("defaultOffSet");
 let userOffSet = document.getElementById("userOffSet");
 let customeOffSet = document.getElementById("customeOffSet");
@@ -31,6 +46,8 @@ userOffSet.addEventListener("click", function(){
 }
 
 function decoding(){
+    let decodingFrom = document.getElementById("decodingFrom");
+    decodingFrom.innerHTML = "Descifrando mensaje de "+localStorage.getItem("name2")
     let defaultOffSet = document.getElementById("defaultOffSet");
     let userOffSet = document.getElementById("userOffSet");
     let customeOffSet = document.getElementById("customeOffSet");
