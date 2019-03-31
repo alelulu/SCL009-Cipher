@@ -20,30 +20,54 @@ function encoding(){
     let eyeBtn = document.getElementById("eyeBtn")
     eyeBtn.addEventListener("click", function(){
         let eyeIcon = document.getElementById("eyeIcon")
+        let hiddenText = document.getElementById("hiddenText")
         if (eyeIcon.getAttribute("src") == "eye-closed.svg"){
+            hiddenText.setAttribute("type", "text")
             eyeIcon.setAttribute("src", "eye.svg")
         } 
         else{
             eyeIcon.setAttribute("src", "eye-closed.svg")
+            hiddenText.setAttribute("type", "password")
         }
     })
-let defaultOffSet = document.getElementById("defaultOffSet");
-let userOffSet = document.getElementById("userOffSet");
-let customeOffSet = document.getElementById("customeOffSet");
-customeOffSet.style.display = "none";
-defaultOffSet.addEventListener("click", function(){
-    if(defaultOffSet.checked){
-        customeOffSet.style.display = "none";
-    }
+
+    let defaultOffSet = document.getElementById("defaultOffSet");
+    let userOffSet = document.getElementById("userOffSet");
+    let customeOffSet = document.getElementById("customeOffSet");
+    customeOffSet.setAttribute("value", 1)
+    customeOffSet.style.display = "none";
+    defaultOffSet.addEventListener("click", function(){
+        if(defaultOffSet.checked){
+            customeOffSet.style.display = "none";
+        }
+    })
+
+    userOffSet.addEventListener("click", function(){
+        if(userOffSet.checked){
+            customeOffSet.style.display = "block";
+        }
+    })
+
+    let encodeBtn = document.getElementById("encodeBtn")
+    let hiddenText = document.getElementById("hiddenText")
+    encodeBtn.addEventListener("click", function(){
+      let hiddenTextValue = hiddenText.value.toUpperCase()
+      let offSetValue = 3
+      if (userOffSet.checked){
+        offSetValue = parseInt(customeOffSet.value)
+  
+      }
+      if (hiddenText !=""){
+        let newText = cipher.encode(hiddenTextValue, offSetValue)
+        let finalText = document.getElementById("finalText")
+        finalText.setAttribute("value", newText)
+      }
+      else{
+        alert("No has ingresado un texto para cifrar")
+      }
+    })
 }
-)
-userOffSet.addEventListener("click", function(){
-    if(userOffSet.checked){
-        customeOffSet.style.display = "block";
-    }
-}
-)
-}
+
 
 function decoding(){
     let decodingFrom = document.getElementById("decodingFrom");

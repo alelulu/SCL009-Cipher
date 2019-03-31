@@ -15,7 +15,7 @@
         <br> 
         Mientras escribes estaremos ocultando tu mensaje. Para verlo cuando quieras presiona el ícono del ojo.</h3>
       <form action="">
-        <input type="password" id="text" placeholder="Escribe aquí tu mensaje">
+        <input type="password" id="hiddenText" placeholder="Escribe aquí tu mensaje">
         <button id="eyeBtn" type="button"><img id="eyeIcon" src="eye-closed.svg" alt="Oculto"></button>
         <h4>Elige la clave que usarás</h4> 
         <input type="radio" name="offSet" id="defaultOffSet"> Usar clave por defecto (3)
@@ -23,10 +23,10 @@
         <input type="number" min="1" name="chooseOffSet" id="customeOffSet">
         <br>
         <br> 
-        <button id="encodeBtn">Codificar</button>
+        <button type="button" id="encodeBtn">Codificar</button>
       </form>
       <form action="">
-          <input type="text" name="" id="" placeholder="Aquí aparecerá tu mensaje codificado" readonly>
+          <input type="text" id="finalText" placeholder="Aquí aparecerá tu mensaje codificado" readonly>
       </form>
       <br>
       <br> 
