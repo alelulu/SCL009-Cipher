@@ -75,32 +75,39 @@ function decoding(){
     let defaultOffSet = document.getElementById("defaultOffSet");
     let userOffSet = document.getElementById("userOffSet");
     let customeOffSet = document.getElementById("customeOffSet");
+    customeOffSet.setAttribute("value", 1)
+    let encondeText = document.getElementById("encondeText")
     customeOffSet.style.display = "none";
     defaultOffSet.addEventListener("click", function(){
         if(defaultOffSet.checked){
             customeOffSet.style.display = "none";
         }
 
-    }
-    )
+    })
     userOffSet.addEventListener("click", function(){
         if(userOffSet.checked){
             customeOffSet.style.display = "block"
         }
     }
     )
+
+    let decodeBtn = document.getElementById("decodeBtn")
+    decodeBtn.addEventListener("click", function(){
+      let offSetValue = 3
+      let encondeText = document.getElementById("encondeText")
+      encondeText = encondeText.value.toUpperCase()
+      if (userOffSet.checked) {
+        offSetValue = parseInt(customeOffSet.value)
+      }
+      if (encondeText != ""){
+        let newText = cipher.decode(encondeText, offSetValue)
+        let finalText = document.getElementById("finalText")
+        finalText.setAttribute("value", newText)
+      }
+      else{
+        alert("No has ingresado un texto para cifrar")
+      }
+    }
+
+    )
 }
-
-/* agregar los botones encodeBtn y decodeBtn dentro de un addeventlistener, será click (sin on) y llamará a la función cipher.encode o cipher.decode
-*/
-
-/*
-let encodeBtn = document.getElementById("encodeBtn")
-encodeBtn.addEventListener("click", cipher.encode(){
-    if
-
-  }
-  
-  )
-  let text = document.getElementById("text")
-*/
