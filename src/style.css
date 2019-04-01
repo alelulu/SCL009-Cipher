@@ -19,7 +19,20 @@ h2{
   font-family: 'Roboto Condensed', sans-serif;
   color: #ab7474;
 }
+h4{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #ab7474;
+}
+h5{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #855a5a;
+}
 p {
   font-family: 'Roboto Condensed', sans-serif;
   color: #ab7474;
+  font-size: 110%;
+}
+input.coupleNames {
+  border-left: 20px;
+  margin-left: 5%;
 }
