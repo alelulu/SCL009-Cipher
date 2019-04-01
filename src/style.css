@@ -1,1 +1,25 @@
-/* Acá va tu código */
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+  text-align: center;
+  background-color: #f0dbdb;
+}
+a {
+color: #855a5a;
+}
+div#title{
+  font-family: 'Pacifico', cursive;
+  color: #ab7474; 
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+h2{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #ab7474;
+}
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #ab7474;
+}
