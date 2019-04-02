@@ -14,23 +14,30 @@
             <h1>Secretos de dos</h1>
             <img src="http://i748.photobucket.com/albums/xx122/luuuh/divisorias/barinhas29.gif" alt="">
         </div>
+        <br>
+        <br>
       <h2 id="codingFor"></h2>
-      <h3>¡Siéntete a salvo! 
+      <p>¡Siéntete a salvo! 
         <br> 
-        Mientras escribes estaremos ocultando tu mensaje. Para verlo cuando quieras presiona el ícono del ojo.</h3>
+        Mientras escribes estaremos ocultando tu mensaje. Para verlo cuando quieras presiona el ícono "<img src="eye-closed.svg" alt="ícono ojo">".</p>
       <form action="">
-        <input type="password" id="hiddenText" placeholder="Escribe aquí tu mensaje">
+        <input type="password" id="hiddenText" class="mesages" placeholder="Escribe aquí tu mensaje">
         <button id="eyeBtn" type="button"><img id="eyeIcon" src="eye-closed.svg" alt="Oculto"></button>
+        <br>
+        <br>
         <h4>Elige la clave que usarás</h4> 
         <input type="radio" name="offSet" id="defaultOffSet" checked> Usar clave por defecto (3)
         <input type="radio" name="offSet" id="userOffSet"> Elegir tu propia clave
+        <div class="row justify-content-center">
         <input type="number" min="1" name="chooseOffSet" id="customeOffSet">
-        <br>
+        </div>
         <br> 
         <button type="button" id="encodeBtn">Codificar</button>
       </form>
+      <br>
+      <br>
       <form action="">
-        <input type="text" id="finalText" placeholder="Aquí aparecerá tu mensaje codificado" readonly>
+        <input type="text" id="finalText" class="mesages" placeholder="Aquí aparecerá tu mensaje codificado" readonly>
       </form>
       <br>
       <br> 
@@ -38,6 +45,9 @@
          <button type="submit">Volver al menú</button>
       </form>
     </div>
+    <br>
+    <br>
+    <br>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

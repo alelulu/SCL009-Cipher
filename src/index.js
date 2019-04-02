@@ -1,3 +1,6 @@
+let nameAlert = document.getElementById("nameAlert")
+nameAlert.style.display = "none"
+
 function saveUser(){
   let user1 = document.getElementById("user1").value;
   let user2 = document.getElementById("user2").value;
@@ -6,6 +9,9 @@ function saveUser(){
     localStorage.setItem("name1", user1);
     localStorage.setItem("name2", user2);
     userForm.submit();
+  }
+  else{
+    nameAlert.style.display = "block"
   }
 }
 

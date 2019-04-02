@@ -4,35 +4,61 @@
 
 body {
   text-align: center;
-  background-color: #f0dbdb;
+  background-image: url("https://img3.akspic.com/image/75338-heart-music-valentines_day-petal-information-1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: center top;
+  background-color: #2d142c;
 }
 a {
-color: #855a5a;
+color: #e82f3f;
 }
 div#title{
   font-family: 'Pacifico', cursive;
-  color: #ab7474; 
+  color: #e82f3f; 
   margin-top: 5%;
   margin-bottom: 1%;
 }
 h2{
   font-family: 'Roboto Condensed', sans-serif;
-  color: #ab7474;
+  color: #e82f3f;
 }
 h4{
   font-family: 'Roboto Condensed', sans-serif;
-  color: #ab7474;
+  color: #e82f3f;
 }
 h5{
   font-family: 'Roboto Condensed', sans-serif;
-  color: #855a5a;
+  color: #333333;
 }
 p {
   font-family: 'Roboto Condensed', sans-serif;
-  color: #ab7474;
-  font-size: 110%;
+  color: #333333;
+  font-size: 20px;
 }
-input.coupleNames {
-  border-left: 20px;
-  margin-left: 5%;
+form#userForm{
+  text-align: center;
+}
+input.coupleNames{
+  width: 300px;
+  border-color: #e82f3f;
+}
+input#customeOffSet{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #e82f3f;
+  text-align: center;
+  width: 50px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin-top: 30px;
+}
+input.mesages{
+  width: 500px;
+  height: 200px;
+  border-color: #e82f3f;
+  text-align: center;
+}
+div#nameAlert{
+  width: 500px;
 }
