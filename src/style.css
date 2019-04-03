@@ -37,14 +37,14 @@ p {
   color: #333333;
   font-size: 20px;
 }
-form#userForm{
+form#user_form{
   text-align: center;
 }
-input.coupleNames{
+input.couple_names{
   width: 300px;
   border-color: #e82f3f;
 }
-input#customeOffSet{
+input#custome_offset{
   font-family: 'Roboto Condensed', sans-serif;
   color: #e82f3f;
   text-align: center;
@@ -59,6 +59,6 @@ input.mesages{
   border-color: #e82f3f;
   text-align: center;
 }
-div#nameAlert{
+div#name_alert{
   width: 500px;
 }

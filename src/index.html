@@ -23,18 +23,18 @@
       </p>
       <br>
       <br>
-      <form action="welcome.html" id="userForm">
+      <form action="welcome.html" id="user_form">
         <h4>¡Ingresa tus datos para comenzar!</h4>
         <br>
         <div class="row justify-content-center">
           <div class="col-3">
             <div class="col-md-3"></div>
             <h5>Ingresa tu nombre:</h5>
-            <input type="text" id="user1" class="coupleNames" placeholder="Tu nombre aquí">
+            <input type="text" id="user1" class="couple_names" placeholder="Tu nombre aquí">
           </div>
           <div class="col-3">
             <h5>Ingresa el nombre de tu pareja:</h5>
-            <input type="text" id="user2" class="coupleNames" placeholder="El nombre de tu pareja aquí">
+            <input type="text" id="user2" class="couple_names" placeholder="El nombre de tu pareja aquí">
             <div class="col-md-3"></div>
           </div>
         </div>
@@ -42,11 +42,11 @@
         <br>
         <br>
         <div class="row justify-content-center">
-          <div id="nameAlert" class="alert alert-danger" role="alert">
+          <div id="name_alert" style="display: none" class="alert alert-danger" role="alert">
             ¡No has ingresado los nombres!
           </div>
         </div> 
-        <button type="button" onclick="saveUser()">Entrar</button>
+        <button id="save_user_btn" type="button">Entrar</button>
       </form>
       <br>
       <br>
