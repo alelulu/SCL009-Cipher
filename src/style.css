@@ -17,27 +17,30 @@ color: #e82f3f;
 div#title{
   font-family: 'Pacifico', cursive;
   color: #e82f3f; 
-  margin-top: 5%;
+  margin-top: 3%;
   margin-bottom: 1%;
 }
 h2{
   font-family: 'Roboto Condensed', sans-serif;
   color: #e82f3f;
+  font-size: 22px;
 }
 h4{
   font-family: 'Roboto Condensed', sans-serif;
   color: #e82f3f;
+  font-size: 20px;
 }
 h5{
   font-family: 'Roboto Condensed', sans-serif;
   color: #333333;
+  font-size: 18px;
 }
 p {
   font-family: 'Roboto Condensed', sans-serif;
   color: #333333;
-  font-size: 20px;
+  font-size: 18px;
 }
-form#user_form{
+form#text_style{
   text-align: center;
 }
 input.couple_names{
