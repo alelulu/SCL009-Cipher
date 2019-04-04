@@ -62,3 +62,93 @@ input.mesages{
 div#name_alert{
   width: 500px;
 }
+button#cesar_info{
+  color: #ffffff;
+  background-color: #e82f3f;
+  border-color: #e82f3f;
+  border-radius: rounded;
+}
+button#cesar_info:focus{
+  box-shadow: 0 0 0 0.2rem rgba(232, 47, 63, 0.58);
+}
+button#save_user_btn{
+  color: #ffffff;
+  background-color: #e82f3f;
+  border-color: #e82f3f;
+  border-radius: rounded;
+}
+button#save_user_btn:focus{
+  box-shadow: 0 0 0 0.2rem rgba(232, 47, 63, 0.58);
+}
+button#code_btn{
+  color: #ffffff;
+  background-color: #e82f3f;
+  border-color: #e82f3f;
+  border-radius: rounded;
+}
+button#code_btn:focus{
+  box-shadow: 0 0 0 0.2rem rgba(232, 47, 63, 0.58);
+}
+button#decode_btn{
+  color: #ffffff;
+  background-color: #e82f3f;
+  border-color: #e82f3f;
+  border-radius: rounded;
+}
+button#decode_btn:focus{
+  box-shadow: 0 0 0 0.2rem rgba(232, 47, 63, 0.58);
+}
+button#back_index{
+  color: #ffffff;
+  background-color: #e82f3f;
+  border-color: #e82f3f;
+  border-radius: rounded;
+}
+button#back_index:focus{
+  box-shadow: 0 0 0 0.2rem rgba(232, 47, 63, 0.58);
+}
+button#eye_btn{
+  color: #ffffff;
+  background-color: #e82f3f;
+  border-color: #e82f3f;
+  border-radius: rounded;
+}
+button#eye_btn:focus{
+  box-shadow: 0 0 0 0.2rem rgba(232, 47, 63, 0.58);
+}
+button#encode_btn{
+  color: #ffffff;
+  background-color: #e82f3f;
+  border-color: #e82f3f;
+  border-radius: rounded;
+}
+button#encode_btn:focus{
+  box-shadow: 0 0 0 0.2rem rgba(232, 47, 63, 0.58);
+}
+button#back_menu1{
+  color: #ffffff;
+  background-color: #e82f3f;
+  border-color: #e82f3f;
+  border-radius: rounded;
+}
+button#back_menu1:focus{
+  box-shadow: 0 0 0 0.2rem rgba(232, 47, 63, 0.58);
+}
+button#decode_btn{
+  color: #ffffff;
+  background-color: #e82f3f;
+  border-color: #e82f3f;
+  border-radius: rounded;
+}
+button#decode_btn:focus{
+  box-shadow: 0 0 0 0.2rem rgba(232, 47, 63, 0.58);
+}
+button#back_menu2{
+  color: #ffffff;
+  background-color: #e82f3f;
+  border-color: #e82f3f;
+  border-radius: rounded;
+}
+button#back_menu2:focus{
+  box-shadow: 0 0 0 0.2rem rgba(232, 47, 63, 0.58);
+}

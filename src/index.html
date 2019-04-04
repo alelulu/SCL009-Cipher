@@ -14,12 +14,47 @@
         <img src="http://i748.photobucket.com/albums/xx122/luuuh/divisorias/barinhas29.gif" alt="">
       </div>
       <br>
-      <br>
       <h2>Cifra y descifra mensajes secretos</h2>
       <p>
-        Esta es una aplición para que tú y tu pareja puedan enviar y recibir mensajes secretos. 
+        Esta es una aplicación para que tú y tu pareja puedan enviar y recibir mensajes secretos. 
         <br>
-        Para esta tarea vamos a usar el <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar"><u>Cifrado César</u></a>.
+        Para esta tarea vamos a usar:
+        <!-- The Modal -->
+        <div id="my_modal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal_content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" id="cesar_info" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Cifrado César
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">¿Qué es el Cifrado César?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                En criptografía, el cifrado César, también conocido como cifrado por desplazamiento, código de César o desplazamiento de César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/245px-Caesar3.svg.png" alt="imagen césar">
+              </div>
+              <div class="modal-footer">
+                <button type="button" id="exit_modal" class="btn btn-secondary" data-dismiss="modal">Entendido</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </p>
       <br>
       <br>
@@ -46,7 +81,7 @@
             ¡No has ingresado los nombres!
           </div>
         </div> 
-        <button id="save_user_btn" type="button">Entrar</button>
+        <button id="save_user_btn" class="btn btn-primary" type="button">Entrar</button>
       </form>
       <br>
       <br>
