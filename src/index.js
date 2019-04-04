@@ -19,7 +19,6 @@ saveUsersBtn.addEventListener("click", () => {
 let greetings = document.getElementById("greetings")
 if (greetings != null){
   window.addEventListener("load", () => {
-    console.log(window)
     let sayHi = document.getElementById("say_hi");
     sayHi.innerHTML = "Hola, "+localStorage.getItem("name1");
   })
@@ -89,7 +88,6 @@ if (decodingPage != null){
     let userOffSet = document.getElementById("user_offset");
     let customeOffSet = document.getElementById("custome_offset");
     customeOffSet.setAttribute("value", 1)
-    let encondeText = document.getElementById("enconde_text")
     customeOffSet.style.display = "none";
     defaultOffSet.addEventListener("click", () => {
       if(defaultOffSet.checked){
