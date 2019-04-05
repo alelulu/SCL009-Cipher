@@ -62,7 +62,7 @@ if(codingPage != null){
     let encodeBtn = document.getElementById("encode_btn")
     let hiddenText = document.getElementById("hidden_text")
     encodeBtn.addEventListener("click", () => {
-      let hiddenTextValue = hiddenText.value.toUpperCase()
+      let hiddenTextValue = hiddenText.value
       let offSetValue = 3
       if (userOffSet.checked){
         offSetValue = parseInt(customeOffSet.value)
@@ -105,7 +105,7 @@ if (decodingPage != null){
     decodeBtn.addEventListener("click", () => {
     let offSetValue = 3
     let encondeText = document.getElementById("enconde_text")
-    encondeText = encondeText.value.toUpperCase()
+    encondeText = encondeText.value
     if (userOffSet.checked) {
       offSetValue = parseInt(customeOffSet.value)
     }
