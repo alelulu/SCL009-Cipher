@@ -22,8 +22,12 @@ describe('cipher', () => {
       assert.equal(cipher.encode('1234567890', 3),'4567890123');
     });    
 //Ejemplo de 100% en el test (cubrir todos los casos)
-    it('debería retornar "áéíóúÁÉÍÓÚñÑ" para "áéíóúÁÉÍÓÚñÑ" con offset 3', () => {
-      assert.equal(cipher.encode('áéíóúÁÉÍÓÚñÑ', 3),'áéíóúÁÉÍÓÚñÑ');
+    it('debería retornar "áéíóúÁÉÍÓÚÑñ" para "óúÁÉÍÓÚÑñáéí" con offset 3', () => {
+      assert.equal(cipher.encode('áéíóúÁÉÍÓÚÑñ', 3),'óúÁÉÍÓÚÑñáéí');
+    });
+
+    it('debería retornar ",.;: ()" para ",.;: ()" con offset 3', () => {
+      assert.equal(cipher.encode(',.;: ()', 3),',.;: ()');
     });
   });
 
@@ -45,8 +49,12 @@ describe('cipher', () => {
       assert.equal(cipher.decode('4567890123', 3),'1234567890');
     });
 //Ejemplo de 100% en el test (cubrir todos los casos)
-    it('debería retornar "áéíóúÁÉÍÓÚñÑ" para "áéíóúÁÉÍÓÚñÑ" con offset 3', () => {
-      assert.equal(cipher.decode('áéíóúÁÉÍÓÚñÑ', 3),'áéíóúÁÉÍÓÚñÑ');
+    it('debería retornar "áéíóúÁÉÍÓÚÑñ" para "óúÁÉÍÓÚÑñáéí" con offset 3', () => {
+      assert.equal(cipher.decode('óúÁÉÍÓÚÑñáéí', 3),'áéíóúÁÉÍÓÚÑñ');
+    });
+
+    it('debería retornar ",.;: ()" para ",.;: ()" con offset 3', () => {
+      assert.equal(cipher.decode(',.;: ()', 3),',.;: ()');
     });
   });
 });
