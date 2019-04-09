@@ -1,6 +1,6 @@
 # Secretos de dos
 
-![imagen](Agregar link)
+![imagen](https://github.com/alelulu/SCL009-Cipher/blob/master/src/img%20readme/index.PNG)
 
 En un mundo donde todo se vuelve digital la privacidad es algo que se va perdiendo. ¿Podré enviar un mensaje y que sólo pueda entenderlo quien yo quiera? Con la aplicación web "Secretos de dos" damos a las parejas con esta necesidad la solución que buscan. Ya sea que se quiera enviar un mensaje oculto o recibir uno que ya esté oculto y se quiera decodificarlo, el usuario podrá elegir un número clave que hará cada mensaje diferente al que podría escribir otro usuario.
 
