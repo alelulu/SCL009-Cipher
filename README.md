@@ -1,10 +1,10 @@
 # Secretos de dos
 
-![imagen](Agregar link)
+![indexpage](https://raw.githubusercontent.com/alelulu/SCL009-Cipher/gh-pages/src/img%20readme/index.PNG)
 
 En un mundo donde todo se vuelve digital la privacidad es algo que se va perdiendo. ¿Podré enviar un mensaje y que sólo pueda entenderlo quien yo quiera? Con la aplicación web "Secretos de dos" damos a las parejas con esta necesidad la solución que buscan. Ya sea que se quiera enviar un mensaje oculto o recibir uno que ya esté oculto y se quiera decodificarlo, el usuario podrá elegir un número clave que hará cada mensaje diferente al que podría escribir otro usuario.
 
-Para acceder a esta aplicación web puedes entrar "en este link" (añadir hipervínculo GHPages)
+Para acceder a esta aplicación web puedes entrar [en este link](https://alelulu.github.io/SCL009-Cipher/src/index.html).
 
 ### ¿A quién va dirigida?
 
@@ -36,11 +36,14 @@ Utilizando *Trello* pude estructurar todas las tareas que debía realizar. Adem�
 **En el proceso de diseño visual:**
 - Primero creé un sketch en papel de cómo se debería ver mi aplicación.
 
->>> (agregar imagen del sketch)
+  (agregar imagen del sketch)
 - Luego de crear el diseño básico de la aplicación web y tenerla funcional realicé tests de usuario para conocer cómo mi usuario objetivo se iba a sentir usándolo; si entendía las instrucciones, si los botones eran adecuados y útiles, si se sentía satisfecho con que el texto que codificaba estuviera oculto desde un principio, entre otras cosas.
 
->>> (agregar links de los videos de las entrevistas)
+  (agregar links de los videos de las entrevistas)
 - Diseño de la página:
->- Fondo: Opté por utilizar una imagen de fondo que se adaptara al orden de mi página (centrada) y que tuviera color blanco de fondo para que los textos y los botones pudieran contrastar con ella. 
->- Fonts: Para mi título principal utilicé una font que se adaptara a la personalidad "romántica" de mi aplicación. Elegí una fuente Serif para esta tarea. Para los títulos, párrafos y botones utilicé una sans-serif, que resultara fácil de leer para el usuario. 
->- Paleta de colores: Rojo porque, según la psicología del color, representa el amor. Blanco porque como fondo podía contrastar con el rojo, Gris en los textos porque son más fáciles de leer para el ojo.
+
+   1.- Fondo: Opté por utilizar una imagen de fondo que se adaptara al orden de mi página (centrada) y que tuviera color blanco de fondo para que los textos y los botones pudieran contrastar con ella. 
+   
+   2.- Fonts: Para mi título principal utilicé una font que se adaptara a la personalidad "romántica" de mi aplicación. Elegí una fuente Serif para esta tarea. Para los títulos, párrafos y botones utilicé una sans-serif, que resultara fácil de leer para el usuario. 
+  
+   3.- Paleta de colores: Rojo porque, según la psicología del color, representa el amor. Blanco porque como fondo podía contrastar con el rojo, Gris en los textos porque son más fáciles de leer para el ojo.
