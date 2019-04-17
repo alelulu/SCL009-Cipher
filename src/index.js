@@ -64,15 +64,25 @@ if(codingPage != null){
     encodeBtn.addEventListener("click", () => {
       let hiddenTextValue = hiddenText.value
       let offSetValue = 3
-      if (userOffSet.checked){
-        offSetValue = parseInt(customeOffSet.value)
-      }
+      
       if (hiddenText !=""){
-        let newText = cipher.encode(hiddenTextValue, offSetValue)
+        let newText = "";
+        if (userOffSet.checked){
+          offSetValue = parseInt(customeOffSet.value)
+          if (offSetValue < 0) {
+            newText = cipher.decode(hiddenTextValue, offSetValue * -1)         
+          }
+          else {
+            newText = cipher.encode(hiddenTextValue, offSetValue)
+          }
+        }
+        else {
+          newText = cipher.encode(hiddenTextValue, offSetValue)
+        }
         let finalText = document.getElementById("final_text")
         finalText.setAttribute("value", newText)
       }
-      else{
+      else {
         alert("No has ingresado un texto para cifrar")
       }
     })
@@ -106,12 +116,22 @@ if (decodingPage != null){
     let offSetValue = 3
     let encondeText = document.getElementById("enconde_text")
     encondeText = encondeText.value
-    if (userOffSet.checked) {
-      offSetValue = parseInt(customeOffSet.value)
-    }
+    
     if (encondeText != ""){
-      let newText = cipher.decode(encondeText, offSetValue)
-    let finalText = document.getElementById("final_text")
+      let newText = "";
+      if (userOffSet.checked){
+        offSetValue = parseInt(customeOffSet.value)
+        if (offSetValue < 0) {
+          newText = cipher.encode(encondeText, offSetValue * -1)         
+        }
+        else {
+          newText = cipher.decode(encondeText, offSetValue)
+        }
+      }
+      else {
+        newText = cipher.decode(encondeText, offSetValue)
+      }
+      let finalText = document.getElementById("final_text")
       finalText.setAttribute("value", newText)
     }
     else{
