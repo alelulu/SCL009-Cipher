@@ -2,6 +2,7 @@ window.cipher = {
   encode: (userText, offSet) => {
     let newText = "";
     let newCharacter = "";
+    //se crea array para trabajar con caracteres especiales
     let symbols = ["á", "é", "í", "ó", "ú", "Á", "É", "Í", "Ó", "Ú", "Ñ", "ñ"];
     for (let i = 0; i < userText.length; i++) {
       let character = userText[i].charCodeAt(0);
@@ -20,11 +21,13 @@ window.cipher = {
         newCharacter = (character - 48 + offSet) % 10 + 48;
         newText = newText.concat(String.fromCharCode(newCharacter));
       }
+      //para cifrar tildes y ñ
       else if (symbols.includes(userText[i])) {
         character = symbols.indexOf(userText[i])
         newCharacter = (character + offSet) % symbols.length
         newText = newText.concat(symbols[newCharacter])
       }
+      //para todo el resto de posibilidades sólo concatena
       else {
         newText = newText.concat(userText[i]);
       }
@@ -52,11 +55,13 @@ window.cipher = {
         newCharacter = (character - 57 - offSet) %10 + 57;
         newText = newText.concat(String.fromCharCode(newCharacter));
       }
+      //para descifrar tildes y ñ
       else if (symbols.includes(userText[i])) {
         character = symbols.indexOf(userText[i])
         newCharacter = (character - (symbols.length - 1) - offSet) % symbols.length + (symbols.length - 1);
         newText = newText.concat(symbols[newCharacter])
       }
+      //para todo el resto de posibilidades sólo concatena
       else {
         newText = newText.concat(userText[i]);
       }

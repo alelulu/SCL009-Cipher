@@ -68,12 +68,18 @@ if(codingPage != null){
         offSetValue = parseInt(customeOffSet.value)
       }
       if (hiddenText !=""){
-        let newText = cipher.encode(hiddenTextValue, offSetValue)
-        let finalText = document.getElementById("final_text")
-        finalText.setAttribute("value", newText)
-      }
+        let newText = cipher.encode(hiddenTextValue, offSetValue);
+        let finalText = document.getElementById("final_text");
+        finalText.setAttribute("value", newText);
+        }
+      else if (offSetValue < 0) {
+        //offSetValue = offSetValue *-1;
+        let newText = cipher.decode(hiddenTextValue, offSetValue);
+        let finalText = document.getElementById("final_text");
+        finalText.setAttribute("value", newText);
+      }  
       else{
-        alert("No has ingresado un texto para cifrar")
+        alert("No has ingresado un texto para cifrar");
       }
     })
   })

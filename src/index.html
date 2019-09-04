@@ -2,13 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secretos de dos</title>
     <link rel="shortcut icon" type="image/png" href="http://i595.photobucket.com/albums/tt37/paravidatodazipnet/FAVICONS/EricaRibeiroGifFavicon21.gif"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <div id="root">
+    <div id="root" class="container">
       <div id="title">
         <h1>Secretos de dos</h1>
         <img src="http://i748.photobucket.com/albums/xx122/luuuh/divisorias/barinhas29.gif" alt="">
@@ -46,7 +47,7 @@
                 </button>
               </div>
               <div class="modal-body">
-                En criptografía, el cifrado César, también conocido como cifrado por desplazamiento, código de César o desplazamiento de César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
+                En criptografía, el cifrado César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/245px-Caesar3.svg.png" alt="imagen césar">
               </div>
               <div class="modal-footer">
@@ -57,33 +58,31 @@
         </div>
       </p>
       <br>
-      <form action="welcome.html" id="user_form">
-        <h4>¡Ingresa tus datos para comenzar!</h4>
-        <br>
-        <div class="row justify-content-center">
-          <div class="col-3">
-            <div class="col-md-3"></div>
-            <h5>Ingresa tu nombre:</h5>
-            <input type="text" id="user1" class="couple_names" placeholder="Tu nombre aquí">
-          </div>
-          <div class="col-3">
-            <h5>Ingresa el nombre de tu pareja:</h5>
-            <input type="text" id="user2" class="couple_names" placeholder="El nombre de tu pareja aquí">
-            <div class="col-md-3"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <form action="welcome.html" id="user_form">
+              <h4>¡Ingresa tus datos para comenzar!</h4>
+              <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-6 index-input">
+                  <h5>Ingresa tu nombre:</h5>
+                  <input type="text" id="user1" class="couple_names" placeholder="Tu nombre aquí">
+                </div>
+                <div class="col-sm-12 col-md-6 index-input">
+                  <h5>Ingresa el nombre de tu pareja:</h5>
+                  <input type="text" id="user2" class="couple_names" placeholder="El nombre de tu pareja aquí">
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div id="name_alert" style="display: none" class="alert alert-danger" role="alert">
+                  ¡No has ingresado los nombres!
+                </div>
+              </div> 
+              <button id="save_user_btn" class="btn btn-primary" type="button">Entrar</button>
+            </form>
           </div>
         </div>
-        <br>
-        <br>
-        <div class="row justify-content-center">
-          <div id="name_alert" style="display: none" class="alert alert-danger" role="alert">
-            ¡No has ingresado los nombres!
-          </div>
-        </div> 
-        <button id="save_user_btn" class="btn btn-primary" type="button">Entrar</button>
-      </form>
-      <br>
-      <br>
-      <br>
+      </div>
       </div>
       <script src="cipher.js"></script>
       <script src="index.js"></script>
